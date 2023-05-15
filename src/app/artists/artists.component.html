@@ -1,0 +1,9 @@
+<h2>My Artists</h2>
+<ul class="artists">
+  <li *ngFor="let artist of artists">
+    <a routerLink="/detail/{{ artist.id }}">
+      <span class="badge">{{ artist.id }}</span>
+      {{ artist.name }}
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,9 @@
+<h2>Top Artists</h2>
+<div class="artists-menu">
+  <a *ngFor="let artist of artists" routerLink="/detail/{{ artist.id }}">
+    {{ artist.name }}
+  </a>
+  <div *ngFor="let artist of artists">
+    <img [src]="artist.image" alt="{{ artist.name }}" width="200" />
+  </div>
+</div>

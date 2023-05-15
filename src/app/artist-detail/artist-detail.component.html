@@ -1,0 +1,13 @@
+<div *ngIf="artist">
+  <h2>{{ artist.name | uppercase }} Details</h2>
+  <div>
+    <span>id:</span>
+    {{ artist.id }}
+  </div>
+  <div>
+    <label for="artist-name">Artist name:</label>
+    <input id="artist-name" [(ngModel)]="artist.name" placeholder="name" />
+  </div>
+</div>
+
+<button type="button" (click)="goBack()">go back</button>
